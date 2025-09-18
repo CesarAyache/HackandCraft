@@ -1,0 +1,1048 @@
+body{
+    background-image: url('images/background_image.png');  
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgb(206, 204, 164);
+    font-family: 'Poppins', 'Times New Roman', sans-serif;
+    color: black;
+}
+footer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+/*Above we designed the body and the footer of each HTML page where we specified the background-image that does not repeat, 
+the font-family... In the footer we included three things (terms and conditions, privacy policy, and the copyright) where we
+aligned them to be vertical (column) */
+
+#terms{
+    display: flex;
+    justify-content: space-between, center;
+    padding: 20px;
+    flex-direction: column;
+    align-items:center;
+}
+#termsContent{
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+}
+
+#termsTitle{
+    font-size:30px;
+}
+/*Above we designed the Terms and Conditions HTML page*/ 
+
+#privacy{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+    align-items:center;
+}
+#privacyContent{
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+}
+#privacyTitle{
+    font-size:30px;
+}
+/*Above we designed the privacy policy HTML page (privacy.html)*/
+
+.loginSignUp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+}
+.loginSignUpInput  {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.loginBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.loginBtn:hover {
+    background-color: blue;
+}
+.bottom-textLoginSign {
+    margin-top: 10px;
+}
+.signUpLoginLink {
+    color: #007bff;
+    text-decoration: none;
+}
+/*Above we designed the Sign Up and Login pages*/ 
+
+#title{
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 10;
+    font-size: 65px;
+}
+#desc{
+    text-align:center;
+    margin-top: 0;
+    font-size: 20px;
+}
+#menu-btn{ /*This is to hide the menu button on large screens*/
+    display:none;
+}
+
+nav  ul{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+nav ul li { /*designing the list elements in the navigation bar*/
+    list-style: none;
+    margin: 0 15px;
+    border-right: 2px solid black;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-left: 2px solid black;
+}
+
+nav ul li a { /*designing the links in each component of the navigation bar*/
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover { /*changing the color of the components of the navigation bar when hovering*/
+    background-color: #555;
+    color: yellow;
+}
+
+#popular, #latest, #testimonials {
+    font-size: 45px;
+    text-align: center;
+}
+
+#popCategories, #popTutorials {
+    display: flex; 
+    justify-content: center; 
+    list-style: none; 
+}
+
+#popCategories li, #popTutorials li {
+    margin: 30px; 
+}
+
+#popCategories img, #popTutorials img {
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover;
+    transition: 0.3s; 
+}
+#popCategories p, #popTutorials p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#popCategories img:hover, #popTutorials img:hover {
+    transform: scale(1.1); 
+}
+
+.testimonials-box {
+    background: #ffffff; 
+    border: 2px solid #ddd; 
+    padding: 15px;
+    margin: 10px auto;
+    width: 450px;
+    border-radius: 10px; 
+}
+
+#copyright {
+    display: inline-block;
+    background: white;
+    border: 2px solid white;
+    border-radius: 10 px;
+}
+/*Above we designed the homepage.html*/
+
+
+#tutorial_title, #paperTut, #woodworkingTut, #electronicsTut{
+    text-align: center;
+    font-size: 35px;
+}
+
+#PaperExamples, #WoodExamples, #elecExamples {
+    display: flex; 
+    justify-content: center; 
+    list-style: none; 
+}
+
+#PaperExamples li, #WoodExamples li, #elecExamples li{
+    margin: 30px; 
+}
+
+#PaperExamples img, #WoodExamples img, #elecExamples img{
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover; 
+    transition: 0.3s; 
+}
+#PaperExamples p, #WoodExamples p, #elecExamples p{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+#PaperExamples img:hover, #WoodExamples img:hover,#elecExamples img:hover{
+    transform: scale(1.1); 
+}
+/*Above we designed the tutorials page which have similar designs for the three main categories (Paper, Electronics, Wood)*/
+
+#gallerySection{
+    text-align:center;
+}
+#galleryTitle{
+    font-size:30px;
+}
+.galleryInputBtn{
+    font-size: 20px; 
+    color: black;
+    border-radius: 5px; 
+    font-weight: bold; 
+}
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+/*Above we designed the gallery.html page*/
+
+.pageTitle{
+    font-size: 35px;
+    text-align: center;
+}
+
+.materials{
+    font-size: 25px;
+    text-align: center;
+}
+
+.materialsTable{
+    margin: 0 auto;
+    width: 500px;
+}
+
+.materialsTable tr td{ /*designing each element of every row in the table*/
+    font-size: 22px;
+    text-align: center;
+    padding: 10px;
+    border: solid black;
+}
+
+#progressMessage{
+    text-align: center;
+    font-size: 20px;
+}
+
+.steps {
+    list-style: none; 
+    padding: 20px;
+    max-width: 600px; 
+    margin: 20px auto;
+    background-color: rgba(255, 254, 254); 
+}
+
+.steps li {
+    font-size: 22px;
+    text-align: left;
+    padding: 10px;
+}
+
+.stepsTitle, .youtubeTitle{
+    font-size:25px;
+    text-align:center;
+}
+.tutYoutube{
+    display: block;
+    margin: auto;
+}
+
+/*Above we designed the tutorial pages (Each and every tutorial) which are divided into three parts the table, steps, and youtube video */
+
+.FAQs{
+    background-color: white;
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+/*Above we designed the FAQs.html page*/
+
+
+.about-section div {
+    background-color: white;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.about-section h1 {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 10px;  
+    font-size: 65px;
+    color: #333;
+}
+
+.content {
+    font-size: 25px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.team-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.team-member {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    align-items: center;
+    width: 450px;
+    display: flex;
+    transition: 0.3s;
+    gap: 20px;
+}
+
+.team-member:hover {
+    transform: scale(1.03);  
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;  
+    height: 150px;  
+    object-fit: cover;    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);  
+    transition: 0.3s;  
+}
+
+.team-member h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+    margin: 5px 0;
+}
+.team-img {
+    width: 150px;  
+    height: 150xp; 
+    object-fit: cover;  
+    border-radius: 50%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    transition: 0.3s; 
+}
+
+.team-img:hover {
+    transform: scale(1.1); 
+}
+.team-name {
+    color: grey;  
+    font-weight: bold;  
+    text-align: center;  
+}
+.team-info {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*Above we designed the about.html page and gave CSS styling to the team info too where we put our pictures as images*/
+
+.contact-section {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-size: 35px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 22px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-left: -10px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: rgb(74, 149, 74);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0e8503;
+}
+/*Above we designed the contact.html page*/ 
+
+.blog{
+    background-color: white;
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+#userAdviceSection button{
+    background: white;
+    border:  2px solid gray;
+    border-radius: 5px;
+    font-size: 22px;
+}
+/*Above we designed the blog.html page which mostly showed advice from other users and a button at the end for the user to add his response*/
+
+
+#addAdvice{
+    text-align:center;
+    font-size: 30px;
+}
+.advice {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 10px;
+    font-size:20px;
+}
+
+.advice input,
+.advice textarea {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 90%;
+}
+
+#returnToBlog, #userAdviceSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#SubmitButtonAdvice {
+    width:auto;
+    background-color: #4CAF50; 
+    color: white; 
+    font-size: 16px; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+#SubmitButtonAdvice:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+
+/*Above we designed the addAdvice.html page*/
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    #title {
+        font-size: 40px;
+    }
+    #desc {
+        font-size: 18px;
+    }
+    #menu-btn {
+        display: block;
+        background: white; 
+        border: none;
+        font-size: 35px; 
+        color: black;
+        border-radius: 5px; 
+        font-weight: bold; 
+    }
+
+    /* here we are hiding the navigation bar initially on small screens */
+    .nav-links {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        position: absolute;
+        font-size: 12px;
+        top: 20%;
+        left: 30%;
+        width: auto;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .materialsTable {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .materialsTable td {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 8px;
+    }
+
+    .materialsTable tr {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .steps {
+        padding-left: 10px;
+    }
+
+    .tutYoutube {
+        width: 100%;
+        height: 250px; 
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+    .loginSignUp {
+        width: 90%;
+        max-width: 300px;
+    }
+    .testimonials-box, .contact-section, .about-section, .FAQs {
+        width: 90%;
+        max-width: 600px;
+    }
+    #popCategories, #popTutorials, #PaperExamples, #WoodExamples, #elecExamples {
+        flex-direction: column;
+        align-items: center;
+    }
+    #popCategories img, #popTutorials img, #PaperExamples img, #WoodExamples img, #elecExamples img {
+        width: 90%;
+        max-width: 300px;
+    }
+    .content{
+        font-size: 15px;
+    }
+    .team-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-member {
+        width: 90%;
+        max-width: 450px;
+    }
+    .blog-section {
+        grid-template-columns: 1fr;
+    }
+    .profile-icon i {
+        font-size: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+      }
+    
+      .profile-icon span {
+        font-size: 0rem;
+      }
+    
+      .profile-icon a {
+        font-size: 0.9rem;
+        gap: 3px;
+      }
+}
+/*Above we used one media query to change all the elements sizes for users using smaller screens making it compatible with all devices*/
+
+.profile-icon {
+    position: absolute;
+    right: 2rem;
+    top: 5%;
+    transform: translateY(-50%);
+  }
+  .profile-icon a{
+    text-decoration: none;
+  color: black;
+  font-weight: 500;
+  gap: 8px; /* space between icon and text */
+  font-size: 1.1rem;
+  }
+
+  .profile-icon i {
+    font-size: 3rem;
+    color: #2F80ED;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .profile-icon i:hover {
+    color: #FF7F50;
+  }
+
+/*Above we designed the View Profile Button*/
+
+.profile-info {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profile-info table {
+    width: 50%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .profile-info th, .profile-info td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .profile-info th {
+    background-color: #7ccb8f;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .profile-info tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  .ViewProfileButtons {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    margin-top: 2rem;
+  }
+  
+  .ViewProfileButtons form {
+    margin: 10px 0; 
+  }
+  
+  .ViewProfileButtons form input[type="submit"] {
+    background-color:  #7ccb8f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 200px; 
+    text-align: center;
+  }
+  
+  .ViewProfileButtons form input[type="submit"]:hover {
+    background-color: #b50000;
+    transform: scale(1.05);
+  }
+
+  /*Above we designed the page for viewProfile.php */
+
+  .tutorial-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tutorial-form input, 
+.tutorial-form textarea,
+.tutorial-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.tutorial-form input[type="text"], 
+.tutorial-form input[type="file"],
+.tutorial-form textarea {
+    font-family: Arial, sans-serif;
+}
+
+.tutorial-form button, #ViewTutButton {
+    background-color:  #7ccb8f;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tutorial-form button:hover, #ViewTutButton:hover {
+    background-color: #309146;
+}
+
+.file-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.file-input-container label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.file-input-container input[type="file"] {
+    width: auto;
+    font-size: 14px;
+}
+
+.tutorial-form input[type="text"]:focus, 
+.tutorial-form textarea:focus, 
+.tutorial-form input[type="file"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/*Above we designed the gallery page*/
+
+#galleryTitlee, #searchBar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#searchBar {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin: 10px auto; 
+    display: block; 
+    text-align: center;
+}
+
+#userTuts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 columns by default */
+    gap: 10px; 
+    justify-items: center;  
+}
+
+.tutorial-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    border-radius: 10px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.tutorial-card:hover {
+    transform: scale(1.05); 
+}
+
+.tutorial-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px; 
+}
+
+.tutorial-card h4 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/*Above we designed the viewTutorials.php page*/
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 200px;
+}
+
+.submit-button.add, .submit-button.view  {
+    background-color: rgb(105, 214, 105);
+}
+
+.submit-button.add:hover, .submit-button.view:hover {
+    background-color: rgb(4, 77, 4);
+}
+
+/*Above we styled the weekly.html*/
+
+/* General form styling */
+.add-weekly-form {
+    width: 50%; /* Adjust this width as necessary */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for labels */
+.form-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Styling for text input fields and file input */
+.form-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Styling for the submit button */
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the submit button */
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/*Above we designed the addWeekly.html*/
+
+button.view-button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 30px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.view-button:hover {
+    background-color: #45a049;
+}
+
+/* Project container styling */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Individual project item */
+.project-item {
+    width: 250px;
+    background-color: #fff;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.project-item p strong {
+    color: #333;
+}
+/*Above we designed the ViewWeekly.html*/
+
+.star-rating {
+    direction: rtl;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star-rating input:checked ~ label {
+    color: gold;
+}
+
+.star-rating input:checked + label {
+    color: gold;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: gold;
+}
+
+.submit-rating {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    gap: 10px;
+}
+
+.submit-rating:hover {
+    background-color: #057608;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+/*Above we designed the stars system*/
