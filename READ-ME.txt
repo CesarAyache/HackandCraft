@@ -1,0 +1,57 @@
+Hack and Craft
+
+Overview
+
+Hack and Craft is a dynamic DIY tutorial platform designed for makers, creators, and innovators. Whether you're into paper crafts, woodworking, or electronics, this platform provides step-by-step guides, interactive checklists, and a vibrant user-driven blog where DIY enthusiasts can share advice and experiences.
+
+Features
+Step-by-Step Tutorials: Detailed instructions for various DIY projects categorized into Paper Crafts, Woodworking, and Electronics.
+Interactive Materials Checklist: Track your progress with a dynamic checklist that provides motivational messages.
+User Advice & Blog Section: Share your DIY experiences and gain inspiration from other makers.
+Image Gallery: Upload and showcase your completed projects.
+Responsive Design: Fully optimized for all devices, ensuring a seamless experience across screens.
+User Authentication: Simple sign-up and login functionality to keep track of personal projects and contributions.
+About Page: Introduce users to the project and the team.
+FAQs Section: For users to check questions and their corresponding answers.
+
+Project Structure
+Hack-and-Craft/
+│── images/               # Contains images used in the tutorials and background design
+│── html/                 # HTML files for different pages (Home, Tutorials, Blog, Gallery, etc.)
+│── css/                  # Styling files (style.css)
+│── js/                   # JavaScript files (script.js) for interactivity
+│── launch.json           # Debugging configuration for development
+│── README.md             # Project documentation
+
+Installation & Usage
+Local Setup
+Clone the repository or download the project files.
+Open index.html in a web browser.
+Ensure that JavaScript is enabled for full functionality.
+
+Development Setup
+Install a live server extension in VS Code or run a local server.
+Modify the script.js or style.css files as needed.
+Use launch.json to debug in Chrome if needed.
+
+How It Works
+Navigation Menu: Toggle-friendly navigation menu for easy access to all pages.
+DIY Tutorials: Browse tutorials with materials lists, step-by-step guides, and embedded video instructions.
+Checklist Feature: Check off materials as you gather them to track progress.
+Image Gallery: Upload images to document and showcase your completed projects.
+User Contributions: Add advice and share thoughts through the blog section.
+
+Technologies Used
+HTML, CSS, JavaScript: Core technologies for structure, styling, and interactivity.
+FileReader API: Used to handle image uploads in the gallery.
+JavaScript DOM Manipulation: Enhances user interactivity (validations, toggling menu, updating messages).
+Google API: Loading the Poppins font which is appealing to the users.
+
+Future Improvements
+Implement user authentication for personalized tutorials.
+Expand tutorial categories with more DIY fields.
+Allow users to rate and review tutorials.
+Enable downloadable PDF guides for offline use.
+
+Contribution
+Feel free to fork this repository, make improvements, and submit pull requests. Your ideas and feedback are welcome!

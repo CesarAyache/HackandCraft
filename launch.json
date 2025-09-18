@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open Test1",
+            "file": "c:\\Users\\Ramia\\OneDrive - Lebanese American University\\Desktop\\Rami CS 2nd Year\\Spring_25\\Web Development\\Test1"
+        }
+    ]
+}
