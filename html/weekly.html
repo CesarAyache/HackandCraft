@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Tutorials</title>
+    <link rel = "stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- this is for the view profile icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="../script.js"></script>
+</head>
+<body id="homepage">
+    <header>
+        <h1 id="title">Hack and Craft </h1> <!-- This is the head of the page with a description beneath it-->
+        <h4 id="desc">DIY Tutorial</h4>
+        <div class="profile-icon">
+            <a href="../php/viewProfile.php" title="Login / Sign Up">
+              <i class="fas fa-user-circle"></i>
+              <span>View Profile</span>
+            </a>
+          </div>
+        <nav>
+            <button id="menu-btn" onclick="toggleMenu(event)">☰</button> 
+            <ul class="nav-links">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>  
+                <li><a href="FAQs.html">FAQs</a></li>
+                <!--This is the navigation bar in the form of an unordered list where the elements link to other components of the project-->
+            </ul>
+        </nav>
+    </header>
+    <main id="weekly-challenge">
+        <section class="challenge-intro">
+            <h2 style="text-align:center; font-size:30px;">Weekly DIY Challenge</h2>
+            <p style="text-align:center">Every week, Hack and Craft brings you a fun DIY challenge! Complete the challenge, share your project, and inspire others!</p>
+        </section>
+        <section>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="../images/weekly.jpg" style="width:25%; height:300px;">
+            </div>
+        </section>
+        <section>
+            <ul class="steps">
+                <li><strong>Step 1: </strong>Prepare your mini canvas by sketching a light outline of your design with a pencil.</li>
+                <li><strong>Step 2: </strong>Paint the background first, then layer on your main design with smaller brushes.</li>
+                <li><strong>Step 3: </strong>Let the painting dry completely and add any final details or a protective varnish.</li>
+            </ul>
+        </section>
+        <section class="button-container">
+            <form action="addWeekly.html" method="POST">
+                <input type="submit" class="submit-button add" value="Add yours!">
+            </form>
+        </section>
+        <section class="button-container">
+            <form action="viewWeekly.html", method="POST">
+                <input type="submit" class="submit-button view" value="View Others' Work!">
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

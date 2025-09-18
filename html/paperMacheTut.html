@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Paper Mche Crafts - DIY Tutorials</title>
+    <link rel = "stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- this is for the view profile icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Hack and Craft </h1> <!-- This is the head of the page with a description beneath it-->
+        <h4 id="desc">DIY Tutorial</h4>
+        <div class="profile-icon">
+            <a href="../php/viewProfile.php" title="Login / Sign Up">
+              <i class="fas fa-user-circle"></i>
+              <span>View Profile</span>
+            </a>
+          </div>
+        <nav>
+            <button id="menu-btn" onclick="toggleMenu(event)">☰</button>
+            <ul class="nav-links">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>  
+                <li><a href="FAQs.html">FAQs</a></li>
+                <!--This is the navigation bar in the form of an unordered list where the elements link to other components of the project-->
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section>
+        <br>
+        <h2 class="pageTitle">How to Make Paper Mache</h2>
+        <br>
+        <h2 class="materials">Materials Needed</h2>
+        <table class="materialsTable">
+            <tr>
+                <td>Flour</td>
+                <td><input type="checkbox" onclick="updateMessage()"></td>
+            </tr>
+            <tr>
+                <td>Water</td>
+                <td><input type="checkbox" onclick="updateMessage()"></td>
+            </tr>    
+            <tr>
+                <td>Newspaper</td>
+                <td><input type="checkbox" onclick="updateMessage()"></td>
+            </tr>    
+            <tr>
+                <td>Cling Wrap</td>
+                <td><input type="checkbox" onclick="updateMessage()"></td>
+            </tr>  
+            <tr>
+                <td>Paint</td>
+                <td><input type="checkbox" onclick="updateMessage()"></td>
+            </tr> 
+            <tr>
+                <td>Scissors</td>
+                <td><input type="checkbox" onclick="updateMessage()"></td>
+            </tr>   
+        </table>
+        </section>
+        <section>
+            <p id="progressMessage">Start checking off materials! 🛠️</p>
+        </section>
+        <section>
+        <h3 class="stepsTitle">Steps for Paper Mache:</h3>
+        <ul class="steps">
+            <li><strong>Step 1: </strong>Mix flour and water until you get a smooth, glue-like consistency.</li>
+            <li><strong>Step 2: </strong>Rip newspaper or tissue paper into small strips.</li>
+            <li><strong>Step 3: </strong>Dip the paper strips into the paste and layer them over your shape.</li>
+            <li><strong>Step 4: </strong>Allow the layers to fully dry before adding more.</li>
+            <li><strong>Step 5: </strong>Once dry, use the paint to decorate and enjoy it! </li>
+        </ul>
+        <br>
+        </section>
+
+        <section>
+            <iframe class="tutYoutube" width="853" height="480" src="https://www.youtube.com/embed/HEZbHFaWCKw" 
+            title="How to Make Paper Mache | The BEST Paper Mache Recipe" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       </section>
+       <section>
+        <h1 style="text-align:center" id="ratingMessage">Rate This Tutorial</h1>
+        <form class="star-rating-form" style="display:flex; justify-content: center; align-items: center;">
+            <div class="star-rating" >
+                <input type="radio" name="rating" value="5" id="5-stars"><label for="5-stars" class="fas fa-star"></label>
+                <input type="radio" name="rating" value="4" id="4-stars"><label for="4-stars" class="fas fa-star"></label>
+                <input type="radio" name="rating" value="3" id="3-stars"><label for="3-stars" class="fas fa-star"></label>
+                <input type="radio" name="rating" value="2" id="2-stars"><label for="2-stars" class="fas fa-star"></label>
+                <input type="radio" name="rating" value="1" id="1-star"><label for="1-star" class="fas fa-star"></label>
+            </div>
+            <br>
+        <button type="button" class="submit-rating">Submit Rating</button>
+    </form>
+       </section>
+       <section>
+            <p id="average-rating" style="text-align:center"></p>
+       </section>
+    </main>
+
+    <footer>
+        <br>
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <p id="copyright">&copy; 2025 DIY Tutorials. All rights reserved.</p>
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <script>
+        $(document).ready(function() {
+            checkIfRated(4);
+            $(".submit-rating").click(function() { //when i click the submit rating button
+                var rating = $("input[name='rating']:checked").val(); // get the selected rating value (1,2,..)
+
+                if (!rating) {
+                    alert("Please select a rating.");
+                    return; //if we did not get a value meaning that the button was pressed but with no rating
+                }
+
+                // AJAX request to send rating to PHP
+                $.ajax({
+                    url: '../php/submitRating.php', //sending the submission/rating to the submitRating.php
+                    type: 'POST', //since I am sending the data I need "POST"
+                    data: {
+                        tutorial_id: 4, //this is the tutorial id which i decided to put according to order on the page
+                        rating: rating
+                    },
+                    success: function(response) {
+                        alert('Rating submitted successfully');
+                        fetchAverageRating(4); // a new rating is submitted so i need to re-calculate the average
+                    },
+                    error: function() {
+                        alert('Error submitting rating');
+                    }
+                });
+            });
+
+            // Fetch average rating
+            function fetchAverageRating(tutorialId) {
+                $.ajax({
+                    url: '../php/getAverageRating.php', // the url that will give me the average rating
+                    type: 'GET', // i need the rating so I retrieve it using "GET"
+                    data: {
+                        tutorial_id: tutorialId // i send that i need the average rating of the current tutorial id
+                    },
+                    success: function(response) {
+                        $("#average-rating").html("Average Rating: " + response); //change the html to show the actual average
+                    }
+                });
+            }
+            function checkIfRated(tutorialId) {
+            $.ajax({
+                url: '../php/checkIfRated.php', //need to call the php file
+                type: 'GET', //need to get the result
+                data: { tutorial_id: tutorialId }, //i insert the tutorial id
+                success: function(response) {
+                    if (response === 'rated') {
+                        disableRating();
+                        $("#ratingMessage").text("You already rated this tutorial!");
+                    }
+                }
+            });
+        }
+
+        function disableRating() {
+            function disableRating() {
+            $(".star-rating-form").hide();
+}
+        }
+
+            fetchAverageRating(4); // Fetch and display the average rating on page load
+        });
+    </script>

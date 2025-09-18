@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Tutorials</title>
+    <link rel = "stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- this is for the view profile icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Hack and Craft </h1> <!-- This is the head of the page with a description beneath it-->
+        <h4 id="desc">DIY Tutorial</h4>
+        <div class="profile-icon">
+            <a href="../php/viewProfile.php" title="Login / Sign Up">
+              <i class="fas fa-user-circle"></i>
+              <span>View Profile</span>
+            </a>
+          </div>
+        <nav>
+            <button id="menu-btn" onclick="toggleMenu(event)">☰</button>
+            <ul class="nav-links">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>  
+                <li><a href="FAQs.html">FAQs</a></li>
+                <!--This is the navigation bar in the form of an unordered list where the elements link to other components of the project-->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <br><br>
+        <h2 id="tutorial_title">DIY Tutorials</h2>
+
+        <section>
+            <br>
+            <h3 id="paperTut">Paper Crafts</h3>
+            <ul id="PaperExamples">
+                <li><a href="paperFlowersTut.html">
+                    <img src="../images/paper flowers homepage.jpg" alt="Paper Flowers">
+                </a>
+                <p>Paper Flowers</p>
+                </a></li>
+                <li><a href="origamiAnimalsTut.html">
+                    <img src="../images/Origami_Animals_Overall.webp" alt="Origami Animals">
+                </a>
+                <p>Origami Animals</p>
+                </a></li>
+                <li><a href="paperMacheTut.html">
+                    <img src="../images/Paper_Mache_Overall.webp" alt="Paper Mache">
+                </a>
+                <p>Paper Mache</p>
+                </a></li>
+            </ul>
+        </section>
+
+        <section>
+            <br>
+            <h3 id="woodworkingTut">Woodworking</h3>
+            <ul id="WoodExamples">
+                <li><a href="woodenTableTut.html">
+                    <img src="../images/wooden table homepage.webp" alt="Wooden Table"></a>
+                <p>Wooden Table</p></li>
+                <li><a href="woodenFrameTut.html">
+                    <img src="../images/wooden frames overall.webp" alt="Wooden Frames"></a>
+                <p>Wooden Frames</p></li>
+                <li><a href="woodenCandleTut.html">
+                    <img src="../images/Candle_Holder_Overall.webp" alt="Wooden Candle Holder"></a>
+                <p>Candle Holder</p></li>
+            </ul>
+        </section>
+
+        <section>
+            <br>
+            <h3 id="electronicsTut">Electronics</h3>
+            <ul id="elecExamples">
+                <li><a href="simpleLedTut.html">
+                    <img src="../images/simple_LED_overall.jpg" alt="Simple LED circuit"></a>
+                <p>Simple LED Circuit</p></li>
+                <li><a href="flashlightTut.html">
+                    <img src="../images/Flashlight_Overall.webp" alt="Flashlight from Cardboard"></a>
+                <p>Flashlight</p></li>
+                <li><a href="motorizedFanTut.html">
+                    <img src="../images/Motorized_Fan_Overall.webp" alt="Motorized Fan"></a>
+                <p>Motorized Fan</p></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <br>
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <p id="copyright">&copy; 2025 DIY Tutorials. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

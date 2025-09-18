@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <div class="loginSignUp">
+        <h2 id="loginSignText">Sign Up</h2>
+        <form action="../php/signup.php" method="POST"> 
+            <input id="nameSign" class="loginSignUpInput"  type="text" placeholder="Name" autocomplete="on" name="name" required><br><br>
+            <input id="emailSign" class="loginSignUpInput" type="email" placeholder="Email" autocomplete="on" name="email" required><br><br>
+            <input id="ageSign" class="loginSignUpInput"  list="browsers" placeholder="Age" name="ageRange" required><br><br>
+                <datalist id="browsers">
+                    <option value="18-24">
+                    <option value="25-31">
+                    <option value="32-50">
+                    <option value="50+">
+                </datalist>
+            <input id="passSign" class="loginSignUpInput"  type="password" placeholder="Password" minlength="8" maxlength="16" name="password" required><br><br>
+            <input class="loginSignUpInput"  type="reset" value="Reset">
+            <input type="submit" value="Sign Up">
+        </form>
+        <br><br>
+        <p>-----------------------------------------</p>
+        <p class="bottom-textLoginSign">Already have an account? <a class="signUpLoginLink" href="index.html">Log In</a></p>
+    </div>
+</body>
+</html>

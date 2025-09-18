@@ -1,0 +1,71 @@
+<<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>About Us| DIY Tutorials</title>
+        <link rel = "stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- this is for the view profile icon-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <script src="../script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    
+    <body>
+        <header class="header">
+            <h1 id="title">Hack and Craft </h1> <!-- This is the head of the page with a description beneath it-->
+            <h4 id="desc">DIY Tutorial</h4>
+            <div class="profile-icon">
+                <a href="../php/viewProfile.php" title="Login / Sign Up">
+                  <i class="fas fa-user-circle"></i>
+                  <span>View Profile</span>
+                </a>
+              </div>
+        <nav>
+            <button id="menu-btn" onclick="toggleMenu(event)">☰</button>
+            <ul class="nav-links">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="FAQs.html">FAQs</a></li>
+            </ul>
+        </nav>
+<body>
+    <h1 style="text-align:center">Weekly Projects</h1> 
+
+    <button id="viewOthersBtn" class="view-button">View Others' Work</button>
+    <div id="projectsContainer" class="projects-container"></div> <!-- Container to display the projects -->
+    </main>
+
+    <script>
+        $(document).ready(function() {
+            $("#viewOthersBtn").click(function() {
+                
+                $.ajax({ //AJAX request to fetch and display the projects
+                    url: '../php/viewWeekly.php', // URL to the PHP file
+                    method: 'GET', //we used GET to retreive the data of the weekly challenge projects
+                    success: function(data) {
+                        $("#projectsContainer").html(data);// Insert the returned HTML into the projectsContainer
+                    },
+                    error: function() {
+                        alert('Error loading projects.'); //in case we cannot load the projects
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

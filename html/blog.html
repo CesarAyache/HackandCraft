@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Blog - DIY Tutorials</title>
+    <link rel = "stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- this is for the view profile icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Hack and Craft </h1> <!-- This is the head of the page with a description beneath it-->
+        <h4 id="desc">DIY Tutorial</h4>
+        <div class="profile-icon">
+            <a href="../php/viewProfile.php" title="Login / Sign Up">
+              <i class="fas fa-user-circle"></i>
+              <span>View Profile</span>
+            </a>
+          </div>
+        <nav>
+            <button id="menu-btn" onclick="toggleMenu(event)">☰</button>
+            <ul class="nav-links">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="FAQs.html">FAQs</a></li>
+            </ul>   
+        </nav>
+    </header>
+
+    <main>
+        <br>
+        <article class="blog">
+            <p>How to Choose the Right Materials for Your DIY Project<br> <br>
+                I was never able to choose the most suitable materials until I found this website that gives me all the material
+                I need for the project. I also use generative AI for the projects that are not present here!</p>
+            <p>-Lauren Abu Salha</p>
+        </article>
+
+        <article class="blog">
+            <p>Why Planning is Essential for DIY Success<br><br>
+               I used to start projects without a clear plan and often ended up wasting materials. Now, I sketch my ideas first and 
+               list everything I need. It has saved me so much time and frustration!</p>
+            <p>- Nadine Aridi</p>
+        </article>
+        
+        <article class="blog">
+            <p>The Best Budget-Friendly Tools for DIY Beginners<br><br>
+               When I started DIY projects, I thought I needed expensive tools, but I learned that a few high-quality essentials can go 
+               a long way. Researching before buying saved me money!</p>
+            <p>- Mary Youssef</p>
+        </article>
+        
+        <article class="blog">
+            <p>How to Fix Mistakes Without Starting Over<br><br>
+               I used to get frustrated when a project didn’t go as planned. Now, I see mistakes as part of the process. Sanding, 
+               repainting, and reusing materials have helped me turn errors into learning experiences.</p>
+            <p>- Karim Mohtar</p>
+        </article>
+
+        <section>
+            <div style="display: flex; justify-content: center; align-items: center;">
+            <button id="SubmitButtonAdvice" onclick="goToPage()" style="width:auto; margin:auto">Share Your DIY Advice</button>
+        </div>
+        </section>
+        <br>
+        <section>
+            <form action="../php/viewAdvice.php" method="POST">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                <input type="submit" id="SubmitButtonAdvice" value="Show All Advice" style="width:auto; margin:auto">
+            </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <br>
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <p id="copyright">&copy; 2025 DIY Tutorials. All rights reserved.</p>
+    </footer>
+</body>

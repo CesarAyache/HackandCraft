@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Tutorials</title>
+    <link rel = "stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- this is for the view profile icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="../script.js"></script>
+</head>
+<body id="homepage">
+    <header>
+        <h1 id="title">Hack and Craft </h1> <!-- This is the head of the page with a description beneath it-->
+        <h4 id="desc">DIY Tutorial</h4>
+        <div class="profile-icon">
+            <a href="../php/viewProfile.php" title="Login / Sign Up">
+              <i class="fas fa-user-circle"></i>
+              <span>View Profile</span>
+            </a>
+          </div>
+        <nav>
+            <button id="menu-btn" onclick="toggleMenu(event)">☰</button> 
+            <ul class="nav-links">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>  
+                <li><a href="FAQs.html">FAQs</a></li>
+                <!--This is the navigation bar in the form of an unordered list where the elements link to other components of the project-->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="gallerySection">
+            <br><br>
+            <h2 id="galleryTitle">Add Your Own DIY Projects Here!</h2><br>
+            <form action="../php/addTutorials.php" method="POST" class="tutorial-form" enctype="multipart/form-data">
+                <input type="text" placeholder="Enter title..." name="title" required>
+                <input list="categories" placeholder="Select Category..." name="tutInfo" required>
+                <datalist id="categories">
+                    <option value="Paper">
+                    <option value="Wooden">
+                    <option value="Electronics">
+                    <option value="Other">
+                </datalist>
+                <textarea placeholder="Enter description or steps..." name="description" rows="5" required></textarea>
+                
+                <div class="file-input-container">
+                    <label for="image">Add Image</label>
+                    <input type="file" name="image" accept="image/*" id="image" required>
+                </div>
+                
+                <button type="submit">Add Tutorial</button>
+            </form>
+            <br><h2 id="galleryTitle">View Others' DIY Projects!</h2><br>
+            <form action="../php/viewTutorials.php" method="POST">
+                <button style="font-size: 30px;" id="ViewTutButton" type="submit">View Other Tutorials</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <br>
+        <br>
+        <br>
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <p id="copyright">&copy; 2025 DIY Tutorials. All rights reserved.</p>
+    </footer>
+</body>

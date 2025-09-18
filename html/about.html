@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>About Us| DIY Tutorials</title>
+        <link rel = "stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- this is for the view profile icon-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <script src="../script.js"></script>
+    </head>
+    
+    <body>
+        <header class="header">
+            <h1 id="title">Hack and Craft </h1> <!-- This is the head of the page with a description beneath it-->
+            <h4 id="desc">DIY Tutorial</h4>
+            <div class="profile-icon">
+                <a href="../php/viewProfile.php" title="Login / Sign Up">
+                  <i class="fas fa-user-circle"></i>
+                  <span>View Profile</span>
+                </a>
+              </div>
+        <nav>
+            <button id="menu-btn" onclick="toggleMenu(event)">☰</button>
+            <ul class="nav-links">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="FAQs.html">FAQs</a></li>
+            </ul>
+        </nav>
+        </header>
+        <section class="about-section">
+            <div class="content">
+                <h2>Our Story</h2>
+                <p>We are thrilled to have you here! Dive into a world of creativity, where simple ideas turn into amazing projects. Whether you're a seasoned crafter or just starting out, we hope you find inspiration, joy, and a bit of magic in every tutorial. Let's craft something awesome together!</p>
+            </div>
+            <br><br>
+            <div class="content">
+                <h2>What Do We Offer</h2>
+                <ul>
+                    <li>Budget-friendly tips and trick.</li>
+                    <li>Guides for beginners and advanced DIYs.</li>
+                    <li>Step-by-step tutorials for home decor,crafts and more.</li>
+                     
+                </ul>
+            </div>
+            <br><br>
+            <div class="content">
+                <h2>Our Mission</h2>
+                <p>Our mission is to inspire creativity and make DIY accessible for everyone. We believe that with the right guidance, anyone can transform everyday items into something amazing.</p>
+            </div>
+            <br><br>
+        </section>
+        <section class="team-section">
+            <h2>Meet The Team</h2>
+            <div>
+                <div class="team-member">
+                    <img src="../images/rami.jpg" class="team-img">
+                    <h3 class="team-name">Rami Aabed</h3>
+                    <p>LAU student, computer science-second year</p>
+                </div>
+                <div class="team-member">
+                    <img src="../images/cesar.jpg" class="team-img">
+                    <h3 class="team-name">Cesar Al Ayache</h3>
+                    <p>LAU student, computer science-second year</p>
+                </div>
+                <div class="team-member">
+                    <img src="../images/kevin.jpg" class="team-img">
+                    <h3 class="team-name">Kevin Abdelnour</h3>
+                    <p>LAU student, computer science-second year</p>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <br>
+            <a href="terms.html">Terms and Conditions</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <p id="copyright">&copy; 2025 DIY Tutorials. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

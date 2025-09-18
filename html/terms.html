@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>DIY Clay Sculptures - DIY Tutorials</title>
+    <link rel = "stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- this is for the view profile icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Hack and Craft </h1> <!-- This is the head of the page with a description beneath it-->
+        <h4 id="desc">DIY Tutorial</h4>
+        <div class="profile-icon">
+            <a href="../php/viewProfile.php" title="Login / Sign Up">
+              <i class="fas fa-user-circle"></i>
+              <span>View Profile</span>
+            </a>
+          </div>
+        <nav>
+            <button id="menu-btn" onclick="toggleMenu(event)">☰</button>
+            <ul class="nav-links">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>  
+                <li><a href="FAQs.html">FAQs</a></li>
+                <!--This is the navigation bar in the form of an unordered list where the elements link to other components of the project-->
+            </ul>
+        </nav>
+    </header>
+
+    <main id="terms">
+        <section>
+            <h2 id="termsTitle">Terms and Conditions</h2>
+        </section>
+        <section id="termsContent">
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing and using this website, you agree to comply with these terms and conditions.</p>
+
+            <h2>2. User Responsibilities</h2>
+            <p>You agree to use this website for lawful purposes only and not to engage in any harmful activities.</p>
+
+            <h2>3. Intellectual Property</h2>
+            <p>All content on this site is owned by us and cannot be copied or redistributed without permission.</p>
+
+            <h2>4. Limitation of Liability</h2>
+            <p>We are not responsible for any damages resulting from the use of this website.</p>
+
+            <h2>5. Changes to Terms</h2>
+            <p>We reserve the right to update these terms at any time without prior notice.</p>
+        </section>
+    </main>
+
+    <footer>
+        <br>
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <p id="copyright">&copy; 2025 DIY Tutorials. All rights reserved.</p>
+    </footer>
+</body>

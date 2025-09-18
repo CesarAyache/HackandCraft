@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Blog - DIY Tutorials</title>
+    <link rel = "stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- this is for the view profile icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Hack and Craft</h1> <!-- This is the head of the page with a description beneath it-->
+        <h4 id="desc">DIY Tutorial</h4>
+        <div class="profile-icon">
+            <a href="../php/viewProfile.php" title="Login / Sign Up">
+              <i class="fas fa-user-circle"></i>
+              <span>View Profile</span>
+            </a>
+          </div>
+        <nav>
+            <button id="menu-btn" onclick="toggleMenu(event)">☰</button>
+            <ul class="nav-links">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="FAQs.html">FAQs</a></li>
+            </ul>   
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1 id="addAdvice">Add Your Advice!</h1>
+        </section>
+        <section>
+            <form class="advice" action="../php/addAdvice.php" method="POST">
+                <label for="name">Enter title of advice...</label>
+                <input type="text" id="name" placeholder="Your name" name="name" required>
+                <br>
+                <br>
+                <label for="message">Advice:</label>
+                <textarea id="message" placeholder="Your advice" name="advice" required></textarea>
+                <br>
+                <input id="SubmitButtonAdvice" type="Submit" value="Send">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <br>
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <p id="copyright">&copy; 2025 DIY Tutorials. All rights reserved.</p>
+    </footer>
+</body>

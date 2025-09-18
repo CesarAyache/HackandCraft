@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Tutorials</title>
+    <link rel = "stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> <!-- this is for the view profile icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="../script.js"></script>
+</head>
+<body id="homepage">
+    <header>
+        <h1 id="title">Hack and Craft </h1> <!-- This is the head of the page with a description beneath it-->
+        <h4 id="desc">DIY Tutorial</h4>
+        <div class="profile-icon">
+            <a href="../php/viewProfile.php" title="Login / Sign Up">
+              <i class="fas fa-user-circle"></i>
+              <span>View Profile</span>
+            </a>
+          </div>
+        <nav>
+            <button id="menu-btn" onclick="toggleMenu(event)">☰</button> 
+            <ul class="nav-links">
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>  
+                <li><a href="FAQs.html">FAQs</a></li>
+                <!--This is the navigation bar in the form of an unordered list where the elements link to other components of the project-->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section>
+            <br>
+            <h3 id="popular">Popular Categories</h3>
+            <ul id="popCategories">
+                <li><a href="tutorials.html#paperTut">
+                    <img src="../images/paper crafts.jpg" alt="Paper Crafts"></a>
+                    <p>Paper Crafts</p>
+                </a></li>
+                <li><a href="tutorials.html#woodworkingTut">
+                    <img src="../images/wood working.jpg" alt="Wood Working Crafts"></a>
+                    <p>Wood Working</p></li>
+                <li><a href="tutorials.html#electronicsTut">
+                    <img src="../images/electronics.jpg" alt="Electronics Crafts"></a>
+                    <p>Electronics</p></li>
+            </ul>
+        </section>
+        <!--In this section we list the popular categories of DIY projects which are clickable and take you to other HTML pages-->
+        <!--There is a <p> tag under each image as a title to know -->
+        <section>
+            <br>
+            <h3 id="latest">Latest Tutorials</h3>
+            <ul id="popTutorials">
+                <li><a href="paperFlowersTut.html">
+                    <img src="../images/paper flowers homepage.jpg" alt="Paper Flowers Tutorial">
+                </a>
+                <p>Paper Flowers</p></li>
+                <li><a href="woodenTableTut.html">
+                    <img src="../images/wooden table homepage.webp" alt="Paper Flowers Tutorial"></a>
+                <p>Wooden Table</p></li>
+            </ul>
+        </section>
+        <!--In this section we list two popular tutorials for users to see with a description under each image-->
+        <!--The images are clickable and take the user to another HTML page where it teaches them the tutorial exactly-->
+        <section>
+            <p style="text-align: center; font-size: 40px;"><b>Weekly Challenge</b></p>
+            <a id="popCategories" href="weekly.html" style="display: flex; justify-content: center; align-items: center;">
+                    <img src="../images/upcoming-home.jpg" alt="Paper Flowers Tutorial">
+            </a>
+        </section>
+        <section>
+            <h3 id="testimonials">What People Say</h3>
+            <div class="testimonials-box">
+                <p>“I made the wooden table, and it turned out amazing! Thanks for the tutorial.” – Makram Kordab</p>
+            </div>
+            <div class="testimonials-box">
+                <p>“Loved the paper crafts section! Super fun and easy.” – Serena Fakha</p>
+            </div>
+            <div class="testimonials-box">
+                <p>“The electronics tutorial was super helpful! I built my first LED circuit successfully.” – Imad Mahmoud</p>
+            </div>
+        </section>
+        <!--Here the section is for comments and testimonials from users, we put each one in a <div> tag in order to design them later
+            on as boxes in the HTML page. Since, they all have the same features all the div tags are the same class-->
+    </main>
+
+    <footer>
+        <br>
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <p id="copyright">&copy; 2025 DIY Tutorials. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
